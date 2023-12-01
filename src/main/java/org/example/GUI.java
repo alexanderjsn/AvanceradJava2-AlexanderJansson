@@ -46,7 +46,9 @@ public class GUI extends JFrame implements ActionListener{
             if (response == JFileChooser.APPROVE_OPTION){
                 //lägg itll
                 File file = new File(fileChooser.getSelectedFile().getAbsolutePath());
-
+                if (csvFilter.accept(file)){
+                    System.out.println("Funkar");
+                }
             }
 
 
@@ -65,4 +67,3 @@ public class GUI extends JFrame implements ActionListener{
     // lägg till actionlistener
 
     // lägg till metod här
-}

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b4fc1f8-56d2-4b84-9709-204b901dda5b" name="Changes" comment="prövade att sätta in label loop i Actionlistener och ta bort labels vid varje klick ( för att undvika duplikation )">
+    <list default="true" id="0b4fc1f8-56d2-4b84-9709-204b901dda5b" name="Changes" comment="la på filter för csv filer till fileChoosern">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +21,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "alexanderjsn"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="6e90869d-65dd-4a87-80aa-2182f5cde6c9" />
+        <option name="url" value="https://github.com/alexanderjsn/AvanceradJava2-AlexanderJansson.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 5
@@ -48,6 +62,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alexa\IdeaProjects\AvanceradJava2-AlexanderJansson\src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -56,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701459527521</updated>
-      <workItem from="1701459528668" duration="2182000" />
+      <workItem from="1701459528668" duration="3397000" />
     </task>
     <task id="LOCAL-00001" summary="la till dependencies">
       <option name="closed" value="true" />
@@ -138,7 +157,31 @@
       <option name="project" value="LOCAL" />
       <updated>1701461477555</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="la in filer">
+      <option name="closed" value="true" />
+      <created>1701461889192</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1701461889193</updated>
+    </task>
+    <task id="LOCAL-00012" summary="påbörjade Jfilechooser implementering inuti actionevent">
+      <option name="closed" value="true" />
+      <created>1701462540437</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1701462540437</updated>
+    </task>
+    <task id="LOCAL-00013" summary="la på filter för csv filer till fileChoosern">
+      <option name="closed" value="true" />
+      <created>1701462816266</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1701462816267</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +199,10 @@
     <MESSAGE value="la till JTABLE, testade interaktion med JTABLE och actionevent" />
     <MESSAGE value="la till defaulttablemodel + första rad på table. Testade att lägga in labels och sortera alfabetiskt." />
     <MESSAGE value="prövade att sätta in label loop i Actionlistener och ta bort labels vid varje klick ( för att undvika duplikation )" />
-    <option name="LAST_COMMIT_MESSAGE" value="prövade att sätta in label loop i Actionlistener och ta bort labels vid varje klick ( för att undvika duplikation )" />
+    <MESSAGE value="la in filer" />
+    <MESSAGE value="påbörjade Jfilechooser implementering inuti actionevent" />
+    <MESSAGE value="la på filter för csv filer till fileChoosern" />
+    <option name="LAST_COMMIT_MESSAGE" value="la på filter för csv filer till fileChoosern" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -168,7 +214,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/GUI.java</url>
-          <line>32</line>
+          <line>34</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
