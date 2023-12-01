@@ -1,5 +1,8 @@
 package org.example;
 
+import com.opencsv.CSVReader;
+import com.opencsv.exceptions.CsvValidationException;
+
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableModel;
@@ -7,6 +10,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Arrays;
 
 public class GUI extends JFrame implements ActionListener{
@@ -36,10 +42,23 @@ public class GUI extends JFrame implements ActionListener{
 
     private void csvMethod(){
         try {
-            String filePath =  "*"; //fixa
+            String filePath = "src/Materiallista"; //fixa
+            FileReader fileReader = new FileReader(filePath);
+            CSVReader csvReader = new CSVReader(fileReader);
+            String[] csvRow = csvReader.readNext();
 
+            while(csvRow != null){
+                tableModel.addRow(csvRow);
+            }
+        }
 
-        } catch (){};
+         catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (CsvValidationException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } ;
     }
 
 
