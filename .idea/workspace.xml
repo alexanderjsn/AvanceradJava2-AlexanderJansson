@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b4fc1f8-56d2-4b84-9709-204b901dda5b" name="Changes" comment="skapade frame">
+    <list default="true" id="0b4fc1f8-56d2-4b84-9709-204b901dda5b" name="Changes" comment="la även ut frame utanför konstruktor. Testar actionevent med färgbyte på frame">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701459527521</updated>
-      <workItem from="1701459528668" duration="420000" />
+      <workItem from="1701459528668" duration="718000" />
     </task>
     <task id="LOCAL-00001" summary="la till dependencies">
       <option name="closed" value="true" />
@@ -74,7 +74,31 @@
       <option name="project" value="LOCAL" />
       <updated>1701459924615</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="la till en knapp för filhämtning">
+      <option name="closed" value="true" />
+      <created>1701460021007</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701460021007</updated>
+    </task>
+    <task id="LOCAL-00004" summary="skapa actionevent för knapp + la knapp på en högre nivå i scope">
+      <option name="closed" value="true" />
+      <created>1701460189066</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701460189067</updated>
+    </task>
+    <task id="LOCAL-00005" summary="la även ut frame utanför konstruktor. Testar actionevent med färgbyte på frame">
+      <option name="closed" value="true" />
+      <created>1701460258727</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1701460258728</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,7 +108,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="la till dependencies" />
     <MESSAGE value="skapade frame" />
-    <option name="LAST_COMMIT_MESSAGE" value="skapade frame" />
+    <MESSAGE value="la till en knapp för filhämtning" />
+    <MESSAGE value="skapa actionevent för knapp + la knapp på en högre nivå i scope" />
+    <MESSAGE value="la även ut frame utanför konstruktor. Testar actionevent med färgbyte på frame" />
+    <option name="LAST_COMMIT_MESSAGE" value="la även ut frame utanför konstruktor. Testar actionevent med färgbyte på frame" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

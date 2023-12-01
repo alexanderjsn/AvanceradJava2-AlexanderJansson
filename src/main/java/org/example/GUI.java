@@ -10,18 +10,20 @@ public class GUI extends JFrame implements ActionListener{
     private JFrame frame = new JFrame();
 
     public GUI() {
-        frame.setSize(1500,1500);
-        frame.setLayout(new BorderLayout());
-        frame.add(fileButton,BorderLayout.NORTH);
+        setSize(1500,1500);
+        setLayout(new BorderLayout());
+        add(fileButton,BorderLayout.NORTH);
         fileButton.addActionListener(this);
+        fileButton.setBackground(Color.GRAY);
 
-        frame.setVisible(true);
+
+        setVisible(true);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == fileButton){
-        frame.setBackground(Color.cyan);
+        fileButton.setBackground(Color.cyan);
         }
     }
 
