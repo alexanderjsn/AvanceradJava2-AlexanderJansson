@@ -10,7 +10,8 @@ public class GUI extends JFrame {
         frame.setSize(1500,1500);
         frame.setLayout(new BorderLayout());
 
-
+        JButton fileButton = new JButton("Choose file");
+        frame.add(fileButton,BorderLayout.NORTH);
 
         frame.setVisible(true);
     }
