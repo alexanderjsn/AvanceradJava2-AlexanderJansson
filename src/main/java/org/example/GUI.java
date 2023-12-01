@@ -35,14 +35,13 @@ public class GUI extends JFrame implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == fileButton){
-            tableModel.setRowCount(0);
             String[] text = {"B","C","A"};
+            Arrays.sort(text);
 
             for (String str : text){
                 JLabel label = new JLabel(str);
 
                 tableModel.addRow(text);
-                Arrays.sort(text);
             }
         }
     }
