@@ -49,10 +49,10 @@ public class GUI extends JFrame implements ActionListener{
             //readers som läser in filen
             FileReader fileReader = new FileReader(filePath);
             CSVReader csvReader = new CSVReader(fileReader);
-            //Arrayläst som fylls med cells
+            //Array som fylls med cells
             String[] csvRow;
 
-            // fyller Arraylist med datan/cells från CSV till sista fil (null)
+            // fyller Array med datan/cells från CSV till sista fil (null)
             while((csvRow = csvReader.readNext()) != null){
                 //lägger in en ny rad för varje cell
                 tableModel.addRow(csvRow);
@@ -87,7 +87,7 @@ public class GUI extends JFrame implements ActionListener{
             FileNameExtensionFilter csvFilter = new FileNameExtensionFilter("CSV files", "csv");
             fileChooser.addChoosableFileFilter(csvFilter);
 
-            // om användaren klicker öppna
+            // om användaren klickar öppna
             if (response == JFileChooser.APPROVE_OPTION){
                 //ta in filen som var vald
                 File file = new File(fileChooser.getSelectedFile().getAbsolutePath());
