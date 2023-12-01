@@ -7,8 +7,9 @@ import java.awt.event.ActionListener;
 
 public class GUI extends JFrame implements ActionListener{
     private JButton fileButton = new JButton("Choose file");
+    private JFrame frame = new JFrame();
+
     public GUI() {
-        JFrame frame = new JFrame();
         frame.setSize(1500,1500);
         frame.setLayout(new BorderLayout());
         frame.add(fileButton,BorderLayout.NORTH);
@@ -19,7 +20,7 @@ public class GUI extends JFrame implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == fileButton){
-
+        frame.setBackground(Color.cyan);
         }
     }
 
