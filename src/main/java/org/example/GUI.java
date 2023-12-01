@@ -13,6 +13,7 @@ public class GUI extends JFrame implements ActionListener{
         frame.setSize(1500,1500);
         frame.setLayout(new BorderLayout());
         frame.add(fileButton,BorderLayout.NORTH);
+        fileButton.addActionListener(this);
 
         frame.setVisible(true);
     }
