@@ -40,16 +40,23 @@ public class GUI extends JFrame implements ActionListener{
             JFileChooser fileChooser = new JFileChooser();
             int response = fileChooser.showOpenDialog(null);
             fileChooser.setCurrentDirectory(new File("*"));//fixa
-            FileNameExtensionFilter csvFilter = new FileNameExtensionFilter("CSV");
+            FileNameExtensionFilter csvFilter = new FileNameExtensionFilter("CSV files", "csv");
             fileChooser.addChoosableFileFilter(csvFilter);
 
             if (response == JFileChooser.APPROVE_OPTION){
-                //lägg itll
+                //lägg till
                 File file = new File(fileChooser.getSelectedFile().getAbsolutePath());
                 if (csvFilter.accept(file)){
                     System.out.println("Funkar");
+                    String[] text = {"B","C","A"};
+                    Arrays.sort(text);
+
+                    for (String str : text){
+                        JLabel label = new JLabel(str);
+
+                        tableModel.addRow(text);
                 }
-            }
+            }}}}}
 
 
             /*
@@ -59,11 +66,8 @@ public class GUI extends JFrame implements ActionListener{
             for (String str : text){
                 JLabel label = new JLabel(str);
 
-                tableModel.addRow(text);*/
-            }
-        }
-    }
+                tableModel.addRow(te*/
 
     // lägg till actionlistener
 
-    // lägg till metod här
+    // lägg till metod här*

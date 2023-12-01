@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b4fc1f8-56d2-4b84-9709-204b901dda5b" name="Changes" comment="la på filter för csv filer till fileChoosern">
+    <list default="true" id="0b4fc1f8-56d2-4b84-9709-204b901dda5b" name="Changes" comment="la in csv filter i if statement, buggtestar">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701459527521</updated>
-      <workItem from="1701459528668" duration="3397000" />
+      <workItem from="1701459528668" duration="3768000" />
     </task>
     <task id="LOCAL-00001" summary="la till dependencies">
       <option name="closed" value="true" />
@@ -181,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701462816267</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="la in csv filter i if statement, buggtestar">
+      <option name="closed" value="true" />
+      <created>1701463053495</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1701463053495</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +210,8 @@
     <MESSAGE value="la in filer" />
     <MESSAGE value="påbörjade Jfilechooser implementering inuti actionevent" />
     <MESSAGE value="la på filter för csv filer till fileChoosern" />
-    <option name="LAST_COMMIT_MESSAGE" value="la på filter för csv filer till fileChoosern" />
+    <MESSAGE value="la in csv filter i if statement, buggtestar" />
+    <option name="LAST_COMMIT_MESSAGE" value="la in csv filter i if statement, buggtestar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
