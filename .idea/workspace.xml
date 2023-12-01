@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b4fc1f8-56d2-4b84-9709-204b901dda5b" name="Changes" comment="la även ut frame utanför konstruktor. Testar actionevent med färgbyte på frame">
+    <list default="true" id="0b4fc1f8-56d2-4b84-9709-204b901dda5b" name="Changes" comment="la till JTABLE, testade interaktion med JTABLE och actionevent">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701459527521</updated>
-      <workItem from="1701459528668" duration="718000" />
+      <workItem from="1701459528668" duration="1553000" />
     </task>
     <task id="LOCAL-00001" summary="la till dependencies">
       <option name="closed" value="true" />
@@ -98,7 +99,31 @@
       <option name="project" value="LOCAL" />
       <updated>1701460258728</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="la till actionlistenern på knappen">
+      <option name="closed" value="true" />
+      <created>1701460299191</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701460299191</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ändrade färg på knappen + fixade syntax">
+      <option name="closed" value="true" />
+      <created>1701460430571</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701460430571</updated>
+    </task>
+    <task id="LOCAL-00008" summary="la till JTABLE, testade interaktion med JTABLE och actionevent">
+      <option name="closed" value="true" />
+      <created>1701460553254</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1701460553255</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,7 +136,10 @@
     <MESSAGE value="la till en knapp för filhämtning" />
     <MESSAGE value="skapa actionevent för knapp + la knapp på en högre nivå i scope" />
     <MESSAGE value="la även ut frame utanför konstruktor. Testar actionevent med färgbyte på frame" />
-    <option name="LAST_COMMIT_MESSAGE" value="la även ut frame utanför konstruktor. Testar actionevent med färgbyte på frame" />
+    <MESSAGE value="la till actionlistenern på knappen" />
+    <MESSAGE value="ändrade färg på knappen + fixade syntax" />
+    <MESSAGE value="la till JTABLE, testade interaktion med JTABLE och actionevent" />
+    <option name="LAST_COMMIT_MESSAGE" value="la till JTABLE, testade interaktion med JTABLE och actionevent" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -120,6 +148,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>7</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/GUI.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
