@@ -34,6 +34,15 @@ public class GUI extends JFrame implements ActionListener{
         setVisible(true);
     }
 
+    private void csvMethod(){
+        try {
+            String filePath =  "*"; //fixa
+
+
+        } catch (){};
+    }
+
+
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == fileButton){
