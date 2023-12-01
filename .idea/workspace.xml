@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b4fc1f8-56d2-4b84-9709-204b901dda5b" name="Changes" comment="la till JTABLE, testade interaktion med JTABLE och actionevent">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0b4fc1f8-56d2-4b84-9709-204b901dda5b" name="Changes" comment="la till defaulttablemodel + första rad på table. Testade att lägga in labels och sortera alfabetiskt.">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701459527521</updated>
-      <workItem from="1701459528668" duration="1553000" />
+      <workItem from="1701459528668" duration="1856000" />
     </task>
     <task id="LOCAL-00001" summary="la till dependencies">
       <option name="closed" value="true" />
@@ -123,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701460553255</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="la till defaulttablemodel + första rad på table. Testade att lägga in labels och sortera alfabetiskt.">
+      <option name="closed" value="true" />
+      <created>1701461363207</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701461363208</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +146,8 @@
     <MESSAGE value="la till actionlistenern på knappen" />
     <MESSAGE value="ändrade färg på knappen + fixade syntax" />
     <MESSAGE value="la till JTABLE, testade interaktion med JTABLE och actionevent" />
-    <option name="LAST_COMMIT_MESSAGE" value="la till JTABLE, testade interaktion med JTABLE och actionevent" />
+    <MESSAGE value="la till defaulttablemodel + första rad på table. Testade att lägga in labels och sortera alfabetiskt." />
+    <option name="LAST_COMMIT_MESSAGE" value="la till defaulttablemodel + första rad på table. Testade att lägga in labels och sortera alfabetiskt." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -151,7 +159,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/GUI.java</url>
-          <line>38</line>
+          <line>32</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

@@ -26,15 +26,6 @@ public class GUI extends JFrame implements ActionListener{
         fileButton.setBackground(Color.GRAY);
         add(table,BorderLayout.CENTER);
 
-        String[] text = {"B","C","A"};
-
-        for (String str : text){
-            JLabel label = new JLabel(str);
-
-            tableModel.addRow(text);
-            Arrays.sort(text);
-        }
-
 
 
         frame.pack();
@@ -44,7 +35,15 @@ public class GUI extends JFrame implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == fileButton){
-        table.setBackground(Color.cyan);
+            tableModel.setRowCount(0);
+            String[] text = {"B","C","A"};
+
+            for (String str : text){
+                JLabel label = new JLabel(str);
+
+                tableModel.addRow(text);
+                Arrays.sort(text);
+            }
         }
     }
 
