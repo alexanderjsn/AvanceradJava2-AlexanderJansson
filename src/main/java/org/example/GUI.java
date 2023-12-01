@@ -5,6 +5,7 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.util.Arrays;
 
 public class GUI extends JFrame implements ActionListener{
@@ -35,13 +36,23 @@ public class GUI extends JFrame implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == fileButton){
+            JFileChooser fileChooser = new JFileChooser();
+            int response = fileChooser.showOpenDialog(null);
+            fileChooser.setCurrentDirectory(new File("*"));//fixa
+
+            if (response == JFileChooser.APPROVE_OPTION){
+                //lägg itll
+            }
+
+
+            /*
             String[] text = {"B","C","A"};
             Arrays.sort(text);
 
             for (String str : text){
                 JLabel label = new JLabel(str);
 
-                tableModel.addRow(text);
+                tableModel.addRow(text);*/
             }
         }
     }
