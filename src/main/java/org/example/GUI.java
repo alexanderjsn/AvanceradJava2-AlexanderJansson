@@ -1,6 +1,7 @@
 package org.example;
 
 import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -39,9 +40,13 @@ public class GUI extends JFrame implements ActionListener{
             JFileChooser fileChooser = new JFileChooser();
             int response = fileChooser.showOpenDialog(null);
             fileChooser.setCurrentDirectory(new File("*"));//fixa
+            FileNameExtensionFilter csvFilter = new FileNameExtensionFilter("CSV");
+            fileChooser.addChoosableFileFilter(csvFilter);
 
             if (response == JFileChooser.APPROVE_OPTION){
                 //lägg itll
+                File file = new File(fileChooser.getSelectedFile().getAbsolutePath());
+
             }
 
 
