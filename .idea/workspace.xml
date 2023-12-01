@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b4fc1f8-56d2-4b84-9709-204b901dda5b" name="Changes" comment="la in csv filter i if statement, buggtestar">
+    <list default="true" id="0b4fc1f8-56d2-4b84-9709-204b901dda5b" name="Changes" comment="fixade buggar och felplacering inuti min csvMetod. Lyckades få den att fungera.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701459527521</updated>
-      <workItem from="1701459528668" duration="3768000" />
+      <workItem from="1701459528668" duration="5670000" />
     </task>
     <task id="LOCAL-00001" summary="la till dependencies">
       <option name="closed" value="true" />
@@ -189,7 +190,31 @@
       <option name="project" value="LOCAL" />
       <updated>1701463053495</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fixade bugg som gjorde att filter inte funkade">
+      <option name="closed" value="true" />
+      <created>1701463431039</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1701463431039</updated>
+    </task>
+    <task id="LOCAL-00016" summary="skapa metod som ska lägga till csv fil i table när den kallas">
+      <option name="closed" value="true" />
+      <created>1701463600693</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1701463600694</updated>
+    </task>
+    <task id="LOCAL-00017" summary="la in filereader+csvreader+array för csv celler i metod. prövade lägga till i table">
+      <option name="closed" value="true" />
+      <created>1701464997159</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701464997160</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +236,11 @@
     <MESSAGE value="påbörjade Jfilechooser implementering inuti actionevent" />
     <MESSAGE value="la på filter för csv filer till fileChoosern" />
     <MESSAGE value="la in csv filter i if statement, buggtestar" />
-    <option name="LAST_COMMIT_MESSAGE" value="la in csv filter i if statement, buggtestar" />
+    <MESSAGE value="fixade bugg som gjorde att filter inte funkade" />
+    <MESSAGE value="skapa metod som ska lägga till csv fil i table när den kallas" />
+    <MESSAGE value="la in filereader+csvreader+array för csv celler i metod. prövade lägga till i table" />
+    <MESSAGE value="fixade buggar och felplacering inuti min csvMetod. Lyckades få den att fungera." />
+    <option name="LAST_COMMIT_MESSAGE" value="fixade buggar och felplacering inuti min csvMetod. Lyckades få den att fungera." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -223,7 +252,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/GUI.java</url>
-          <line>34</line>
+          <line>40</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

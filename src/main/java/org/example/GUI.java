@@ -42,14 +42,17 @@ public class GUI extends JFrame implements ActionListener{
 
     private void csvMethod(){
         try {
-            String filePath = "src/Materiallista"; //fixa
+            String filePath = "src/Materiallista.csv"; //fixa
             FileReader fileReader = new FileReader(filePath);
             CSVReader csvReader = new CSVReader(fileReader);
-            String[] csvRow = csvReader.readNext();
+            String[] csvRow;
 
-            while(csvRow != null){
+            while((csvRow = csvReader.readNext()) != null){
+                Arrays.sort(csvRow);
                 tableModel.addRow(csvRow);
             }
+            fileReader.close();
+            csvReader.close();
         }
 
          catch (FileNotFoundException e) {
@@ -75,27 +78,7 @@ public class GUI extends JFrame implements ActionListener{
                 //lägg till
                 File file = new File(fileChooser.getSelectedFile().getAbsolutePath());
                 if (csvFilter.accept(file)){
-                    System.out.println("Funkar");
-                    String[] text = {"B","C","A"};
-                    Arrays.sort(text);
-
-                    for (String str : text){
-                        JLabel label = new JLabel(str);
-
-                        tableModel.addRow(text);
-                }
+                    tableModel.setRowCount(0);
+                    csvMethod();
             }}}}}
 
-
-            /*
-            String[] text = {"B","C","A"};
-            Arrays.sort(text);
-
-            for (String str : text){
-                JLabel label = new JLabel(str);
-
-                tableModel.addRow(te*/
-
-    // lägg till actionlistener
-
-    // lägg till metod här*
