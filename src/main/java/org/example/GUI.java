@@ -1,2 +1,4 @@
-package org.example;public class GUI {
+package org.example;
+
+public class GUI {
 }
