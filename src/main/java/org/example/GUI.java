@@ -16,11 +16,14 @@ import java.io.IOException;
 import java.util.Arrays;
 
 public class GUI extends JFrame implements ActionListener{
+
+    // knapp för file chooser
     private JButton fileButton = new JButton("Choose file");
     private JFrame frame = new JFrame();
 
-
-    private String[] columnLabel = {"1","2","3"};
+    // table settings
+    private String[] columnLabel = {"Item", "Amount per unit", "Total amount"};
+    // sätter tableModel på rowCount 0 (eftersom det ska finnas 0 rader innan innehåll tas in)
     private DefaultTableModel tableModel = new DefaultTableModel(columnLabel, 0 );
 
     private JTable table = new JTable(tableModel);
@@ -33,28 +36,34 @@ public class GUI extends JFrame implements ActionListener{
         fileButton.addActionListener(this);
         fileButton.setBackground(Color.GRAY);
         add(table,BorderLayout.CENTER);
-
-
-
         frame.pack();
         setVisible(true);
     }
 
+
+    // metod som läser in CSV celler
     private void csvMethod(){
         try {
-            String filePath = "src/Materiallista.csv"; //fixa
+            //filväg till CSV fil
+            String filePath = "src/Materiallista.csv";
+            //readers som läser in filen
             FileReader fileReader = new FileReader(filePath);
             CSVReader csvReader = new CSVReader(fileReader);
+            //Arrayläst som fylls med cells
             String[] csvRow;
 
+            // fyller Arraylist med datan/cells från CSV till sista fil (null)
             while((csvRow = csvReader.readNext()) != null){
-                Arrays.sort(csvRow);
+                //lägger in en ny rad för varje cell
                 tableModel.addRow(csvRow);
+
+
             }
             fileReader.close();
             csvReader.close();
         }
 
+        //Exceptions
          catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (CsvValidationException e) {
@@ -65,20 +74,28 @@ public class GUI extends JFrame implements ActionListener{
     }
 
 
+    //FileChooser
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == fileButton){
             JFileChooser fileChooser = new JFileChooser();
+            //öppnar rutan
             int response = fileChooser.showOpenDialog(null);
-            fileChooser.setCurrentDirectory(new File("*"));//fixa
+            //sätter directory till projektets src dokument
+            fileChooser.setCurrentDirectory(new File("src"));
+            // lägger till filter för att kunna se om filen är en CSV fil
             FileNameExtensionFilter csvFilter = new FileNameExtensionFilter("CSV files", "csv");
             fileChooser.addChoosableFileFilter(csvFilter);
 
+            // om användaren klicker öppna
             if (response == JFileChooser.APPROVE_OPTION){
-                //lägg till
+                //ta in filen som var vald
                 File file = new File(fileChooser.getSelectedFile().getAbsolutePath());
+                // kolla om den stämmer med csvFiltret
                 if (csvFilter.accept(file)){
+                    //rensa table (ifall tidigare data är där)
                     tableModel.setRowCount(0);
+                    //kalla csv metoden
                     csvMethod();
-            }}}}}
+                }}}}}
 

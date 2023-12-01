@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b4fc1f8-56d2-4b84-9709-204b901dda5b" name="Changes" comment="fixade buggar och felplacering inuti min csvMetod. Lyckades få den att fungera.">
+    <list default="true" id="0b4fc1f8-56d2-4b84-9709-204b901dda5b" name="Changes" comment="fixade bugg med .setRowCount">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GUI.java" afterDir="false" />
     </list>
@@ -59,7 +59,6 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "C:/Users/Alexa/IdeaProjects/AvanceradJava2-AlexanderJansson/src/main/java/org/example/Main.java",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -76,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701459527521</updated>
-      <workItem from="1701459528668" duration="5670000" />
+      <workItem from="1701459528668" duration="9977000" />
     </task>
     <task id="LOCAL-00001" summary="la till dependencies">
       <option name="closed" value="true" />
@@ -214,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701464997160</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fixade bugg med .setRowCount">
+      <option name="closed" value="true" />
+      <created>1701466084476</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1701466084477</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +247,8 @@
     <MESSAGE value="skapa metod som ska lägga till csv fil i table när den kallas" />
     <MESSAGE value="la in filereader+csvreader+array för csv celler i metod. prövade lägga till i table" />
     <MESSAGE value="fixade buggar och felplacering inuti min csvMetod. Lyckades få den att fungera." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixade buggar och felplacering inuti min csvMetod. Lyckades få den att fungera." />
+    <MESSAGE value="fixade bugg med .setRowCount" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixade bugg med .setRowCount" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
